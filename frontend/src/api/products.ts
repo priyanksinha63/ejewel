@@ -32,8 +32,8 @@ export const productsApi = {
     return response.data;
   },
 
-  getProductReviews: async (productId: string): Promise<ApiResponse<{ reviews: Review[]; count: number; avgRating: number }>> => {
-    const response = await api.get(`/products/${productId}/reviews`);
+  getProductReviews: async (id: string): Promise<ApiResponse<{ reviews: Review[]; count: number; avgRating: number }>> => {
+    const response = await api.get(`/products/${id}/reviews`);
     return response.data;
   },
 

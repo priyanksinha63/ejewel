@@ -77,7 +77,7 @@ func main() {
 			products.GET("/best-sellers", productHandler.GetBestSellers)
 			products.GET("/search", productHandler.SearchProducts)
 			products.GET("/:id", productHandler.GetProduct)
-			products.GET("/:productId/reviews", reviewHandler.GetProductReviews)
+			products.GET("/:id/reviews", reviewHandler.GetProductReviews)
 		}
 
 		// Category routes (public)

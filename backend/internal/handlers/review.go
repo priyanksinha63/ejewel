@@ -22,7 +22,7 @@ func NewReviewHandler() *ReviewHandler {
 }
 
 func (h *ReviewHandler) GetProductReviews(c *gin.Context) {
-	productID := c.Param("productId")
+	productID := c.Param("id")
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
